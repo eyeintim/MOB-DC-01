@@ -160,7 +160,7 @@
                     <navigationItem key="navigationItem" id="AP0-s0-UGJ">
                         <barButtonItem key="rightBarButtonItem" title="Info" id="H9l-qZ-E95">
                             <connections>
-                                <segue destination="ayS-vh-G4y" kind="push" id="VyT-UW-sE1"/>
+                                <segue destination="ayS-vh-G4y" kind="show" id="8Uw-i3-sgc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -282,6 +282,6 @@
         <image name="eyeintim_logo.png" width="301" height="140"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VyT-UW-sE1"/>
+        <segue reference="8Uw-i3-sgc"/>
     </inferredMetricsTieBreakers>
 </document>
