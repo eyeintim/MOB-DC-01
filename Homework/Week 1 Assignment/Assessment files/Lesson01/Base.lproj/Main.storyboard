@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P10-zh-Bie">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,11 +22,8 @@
                                 <state key="normal" title="Info">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="80" y="336" width="30" height="30"/>
-                                </variation>
                                 <connections>
-                                    <segue destination="ayS-vh-G4y" kind="presentation" id="wM2-1n-ubZ"/>
+                                    <segue destination="ayS-vh-G4y" kind="presentation" id="G3V-yt-dnK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvt-Rj-46j">
@@ -33,9 +31,6 @@
                                 <state key="normal" title="Goals">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="274" y="336" width="40" height="30"/>
-                                </variation>
                                 <connections>
                                     <segue destination="BJU-wn-tcC" kind="show" id="EME-np-zd6"/>
                                 </connections>
@@ -74,12 +69,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HcD-KL-EcX" firstAttribute="centerX" secondItem="Zs4-Ii-RoM" secondAttribute="centerX" id="2U8-1r-nKg"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0zk-jw-GGg" secondAttribute="bottom" constant="234" id="37k-D9-Fnv"/>
                             <constraint firstAttribute="centerX" secondItem="HcD-KL-EcX" secondAttribute="centerX" id="5AO-aF-6hn"/>
                             <constraint firstItem="HcD-KL-EcX" firstAttribute="top" secondItem="Zs4-Ii-RoM" secondAttribute="bottom" constant="26" id="K2i-aL-hF5"/>
                             <constraint firstAttribute="centerX" secondItem="Zs4-Ii-RoM" secondAttribute="centerX" id="KjR-FJ-L1L"/>
                             <constraint firstItem="HcD-KL-EcX" firstAttribute="top" secondItem="Zs4-Ii-RoM" secondAttribute="bottom" constant="46" id="ao9-XN-Jv8"/>
                             <constraint firstItem="gvt-Rj-46j" firstAttribute="top" secondItem="HcD-KL-EcX" secondAttribute="bottom" constant="52" id="dbY-nh-tHF"/>
                             <constraint firstItem="Zs4-Ii-RoM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="46" id="e1h-7A-Bl3"/>
+                            <constraint firstItem="0zk-jw-GGg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="64" id="iRC-mf-E7D"/>
+                            <constraint firstItem="0zk-jw-GGg" firstAttribute="baseline" secondItem="gvt-Rj-46j" secondAttribute="baseline" id="lzG-hX-zAK"/>
                             <constraint firstAttribute="centerX" secondItem="gvt-Rj-46j" secondAttribute="centerX" constant="-94" id="mIy-zg-udZ"/>
                             <constraint firstItem="0zk-jw-GGg" firstAttribute="top" secondItem="HcD-KL-EcX" secondAttribute="bottom" constant="52" id="nUj-YY-atY"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="HcD-KL-EcX" secondAttribute="bottom" constant="295" id="vEK-9V-x6H"/>
@@ -89,6 +87,9 @@
                             <mask key="constraints">
                                 <exclude reference="2U8-1r-nKg"/>
                                 <exclude reference="ao9-XN-Jv8"/>
+                                <exclude reference="iRC-mf-E7D"/>
+                                <exclude reference="lzG-hX-zAK"/>
+                                <exclude reference="37k-D9-Fnv"/>
                                 <exclude reference="vEK-9V-x6H"/>
                             </mask>
                         </variation>
@@ -98,8 +99,12 @@
                                 <exclude reference="5AO-aF-6hn"/>
                                 <exclude reference="K2i-aL-hF5"/>
                                 <include reference="ao9-XN-Jv8"/>
+                                <include reference="iRC-mf-E7D"/>
+                                <include reference="lzG-hX-zAK"/>
                                 <exclude reference="nUj-YY-atY"/>
+                                <exclude reference="zwb-Cm-kUb"/>
                                 <exclude reference="dbY-nh-tHF"/>
+                                <include reference="37k-D9-Fnv"/>
                                 <include reference="vEK-9V-x6H"/>
                             </mask>
                         </variation>
@@ -152,6 +157,13 @@
                         </variation>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="AP0-s0-UGJ">
+                        <barButtonItem key="rightBarButtonItem" title="Info" id="H9l-qZ-E95">
+                            <connections>
+                                <segue destination="ayS-vh-G4y" kind="push" id="VyT-UW-sE1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wIs-dh-J9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -175,7 +187,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="35" width="349" height="284"/>
+                                    <rect key="frame" x="114" y="110" width="173" height="128"/>
                                 </variation>
                             </textView>
                         </subviews>
@@ -191,6 +203,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="zJf-gV-exO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Duh-n0-J9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -268,4 +281,7 @@
         <image name="Image-1.jpg" width="852" height="1136"/>
         <image name="eyeintim_logo.png" width="301" height="140"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VyT-UW-sE1"/>
+    </inferredMetricsTieBreakers>
 </document>
