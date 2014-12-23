@@ -24,6 +24,9 @@
                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="80" y="336" width="30" height="30"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="ayS-vh-G4y" kind="presentation" id="wM2-1n-ubZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvt-Rj-46j">
                                 <rect key="frame" x="374" y="336.5" width="40" height="30"/>
@@ -33,6 +36,9 @@
                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="274" y="336" width="40" height="30"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="BJU-wn-tcC" kind="show" id="EME-np-zd6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tim's First App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zs4-Ii-RoM">
                                 <rect key="frame" x="255" y="110" width="91" height="20.5"/>
@@ -104,6 +110,93 @@
             <point key="canvasLocation" x="2668.5" y="339"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="LtK-cZ-Se7">
+            <objects>
+                <viewController id="BJU-wn-tcC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NhV-3q-t00"/>
+                        <viewControllerLayoutGuide type="bottom" id="hYh-kD-0zY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Mc-Mf-Aq5">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is what I'm trying to get out of class" translatesAutoresizingMaskIntoConstraints="NO" id="lom-WH-j4J">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="69" y="93" width="310" height="136"/>
+                                </variation>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyeintim_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="qqZ-1H-dKW">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="80" y="243" width="240" height="128"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lom-WH-j4J"/>
+                                <exclude reference="qqZ-1H-dKW"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="lom-WH-j4J"/>
+                                <include reference="qqZ-1H-dKW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIs-dh-J9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3513" y="502"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Bt0-f1-WCL">
+            <objects>
+                <viewController id="ayS-vh-G4y" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xrr-ap-6aF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wdx-S6-Gcl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fBD-Y0-P8p">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This my short bio" translatesAutoresizingMaskIntoConstraints="NO" id="mW3-6d-uxH">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="35" width="349" height="284"/>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="mW3-6d-uxH"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="mW3-6d-uxH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Duh-n0-J9k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2668.5" y="1022"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tTX-P7-xWD">
             <objects>
                 <viewController id="HMj-eS-NBL" sceneMemberID="viewController">
@@ -173,5 +266,6 @@
     </scenes>
     <resources>
         <image name="Image-1.jpg" width="852" height="1136"/>
+        <image name="eyeintim_logo.png" width="301" height="140"/>
     </resources>
 </document>
