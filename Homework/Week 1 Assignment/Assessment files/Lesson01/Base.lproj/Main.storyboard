@@ -35,7 +35,7 @@
                                     <segue destination="BJU-wn-tcC" kind="show" id="EME-np-zd6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tim's First App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zs4-Ii-RoM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tim's First App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zs4-Ii-RoM">
                                 <rect key="frame" x="255" y="110" width="91" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -123,6 +123,7 @@
                         <viewControllerLayoutGuide type="bottom" id="hYh-kD-0zY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9Mc-Mf-Aq5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This is what I'm trying to get out of class" translatesAutoresizingMaskIntoConstraints="NO" id="lom-WH-j4J">
@@ -179,6 +180,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Wdx-S6-Gcl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fBD-Y0-P8p">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This my short bio" translatesAutoresizingMaskIntoConstraints="NO" id="mW3-6d-uxH">
