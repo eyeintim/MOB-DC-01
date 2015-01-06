@@ -43,7 +43,7 @@ var y = 4
 
 x + y
 x * y
-// Not getting remainder because inferred types of vaiables is an integer
+// Not getting remainder because inferred types of variables is an integer
 x / y
 x - y
 
