@@ -75,6 +75,10 @@ func knockMultipleTimes(ammountOfTimes:Int) {
     }
 }
 
+
+knockMultipleTimes(10)
+
+
 // HAHAHA, okay let's answer before the person behind the door goes nuts!
 // We will write a replyWhoIsHere function that accepts 2 parameters
 // Parameter one will be a firstname (String), and parameter two will be the homeCountry (also String)
