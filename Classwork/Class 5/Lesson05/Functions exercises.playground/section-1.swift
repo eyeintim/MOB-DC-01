@@ -71,6 +71,8 @@ func funcSumSomeFibs(varNumberOfFibsToSum: Int) {
 
 }
 
+// LOST ON THIS ONE!
+
 // TODO: Write a function that takes in a number and prints out whether it is prime, composite or neither.
 
 func funcTellNumberType(varInputNumber: Int) {
@@ -93,9 +95,27 @@ funcTellNumberType(731)
 
 // TODO: Write a function that prints out each of the first 20 fibonacci numbers and whether they are prime. (e.g. 0 is not prime or composite, 1 is prime, etc)
 
+/* I think this will be running a function within a function */
+
+
 // TODO: Write a function that takes in two numbers, a bill amount and an optional tip percentage (represented as a float, e.g. .2 = 20% tip). Return a tuple with the total bill amount and the tip amount (if included).
 
+
+func funcTakeInTwoNumbers (varBillAmount: Float, varTipPercentage: Float?) -> (Float, Float) {
+    var varTipAmount = varBillAmount * varTipPercentage!
+    var varTotalBillAmount = varBillAmount + varTipAmount
+    return (varTotalBillAmount , varTipAmount)
+}
+
+funcTakeInTwoNumbers(20.0, 0)
+
+
+
 // TODO: Write a function that takes in a string and returns a string that is the reverse of the input. Append two strings using the + operator.
+
+func funcTakeInString(varEnterString: String) -> String {
+    
+}
 
 // BONUS TODO: Write a function that takes in an array of strings and a search term string. Return a boolean indicating whether the search term string exists in the array.
 
