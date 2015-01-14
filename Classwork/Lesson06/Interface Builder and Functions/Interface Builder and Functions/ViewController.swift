@@ -1,17 +1,13 @@
 import UIKit
 
-class ViewController: UIViewController {
-
+/*class ViewController: UIViewController {
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var nameLabel: UILabel!
-    @IBAction func changeLabel(sender: AnyObject) {
-    
-         var translation =  nameTextField.text.toInt()
-         var fibResult = fib(translation)
-         nameLabel.text = "\(fibResult)"
+    @IBAction func changeLabel(sender: AnyObject)
         
-        
-    
+        var translation =  nameTextField.text.toInt()
+        nameLabel.text = "\(fib(translation))"
         }
     
     func fib(translated: Int?) -> Int {
@@ -27,7 +23,7 @@ class ViewController: UIViewController {
         
         return result
     }
-    
+  */
     
     
     // Functions of use for this exercise:
@@ -48,5 +44,22 @@ class ViewController: UIViewController {
     */
 
 
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var nameTextFieldTwo: UITextField!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBAction func changeLabel(sender: AnyObject) {
+        
+        var varBillAmount = nameTextField.text.toInt()
+        var varTipPercentage = nameTextFieldTwo.text.toInt()
+        nameLabel.text = "\(funcTakeInTwoNumbers(varBillAmount, varTipPercentage))"
+    }
+    
+    func funcTakeInTwoNumbers(varBillAmount: Float, varTipPercentage: Float?) -> (Float, Float) {
+        var varTipAmount = varBillAmount * varTipPercentage!
+        var varTotalBillAmount = varBillAmount + varTipAmount
+        return (varTotalBillAmount , varTipAmount)
+    }
 }
 
