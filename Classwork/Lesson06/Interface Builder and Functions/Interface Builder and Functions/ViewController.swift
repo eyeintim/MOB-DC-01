@@ -53,13 +53,15 @@ class ViewController: UIViewController {
         
         var varBillAmount = nameTextField.text.toInt()
         var varTipPercentage = nameTextFieldTwo.text.toInt()
-        nameLabel.text = "\(funcTakeInTwoNumbers(varBillAmount, varTipPercentage))"
+        nameLabel.text = "\(funcTakeInTwoNumbers(varBillAmount!, varTipPercentage: varTipPercentage!))"
     }
     
-    func funcTakeInTwoNumbers(varBillAmount: Float, varTipPercentage: Float?) -> (Float, Float) {
-        var varTipAmount = varBillAmount * varTipPercentage!
+    func funcTakeInTwoNumbers(varBillAmount: Int, varTipPercentage: Int) -> (Int, Int) {
+        var varTipAmount = varBillAmount * varTipPercentage / 100
         var varTotalBillAmount = varBillAmount + varTipAmount
+    
         return (varTotalBillAmount , varTipAmount)
+        
     }
 }
 
