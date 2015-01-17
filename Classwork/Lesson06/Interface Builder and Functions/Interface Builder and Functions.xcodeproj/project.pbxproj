@@ -14,6 +14,7 @@
 		7C2DDADC1A5DC0F700AE2FAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C2DDADB1A5DC0F700AE2FAB /* Images.xcassets */; };
 		7C2DDADF1A5DC0F700AE2FAB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C2DDADD1A5DC0F700AE2FAB /* LaunchScreen.xib */; };
 		7C2DDAEB1A5DC0F700AE2FAB /* Interface_Builder_and_FunctionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2DDAEA1A5DC0F700AE2FAB /* Interface_Builder_and_FunctionsTests.swift */; };
+		C3D7207C1A673A8A005BA927 /* animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7207B1A673A8A005BA927 /* animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		7C2DDAE41A5DC0F700AE2FAB /* Interface Builder and FunctionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Interface Builder and FunctionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C2DDAE91A5DC0F700AE2FAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C2DDAEA1A5DC0F700AE2FAB /* Interface_Builder_and_FunctionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface_Builder_and_FunctionsTests.swift; sourceTree = "<group>"; };
+		C3D7207B1A673A8A005BA927 /* animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				7C2DDADD1A5DC0F700AE2FAB /* LaunchScreen.xib */,
 				7C2DDAD31A5DC0F700AE2FAB /* Interface_Builder_and_Functions.xcdatamodeld */,
 				7C2DDACF1A5DC0F700AE2FAB /* Supporting Files */,
+				C3D7207B1A673A8A005BA927 /* animal.swift */,
 			);
 			path = "Interface Builder and Functions";
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C2DDAD71A5DC0F700AE2FAB /* ViewController.swift in Sources */,
+				C3D7207C1A673A8A005BA927 /* animal.swift in Sources */,
 				7C2DDAD21A5DC0F700AE2FAB /* AppDelegate.swift in Sources */,
 				7C2DDAD51A5DC0F700AE2FAB /* Interface_Builder_and_Functions.xcdatamodeld in Sources */,
 			);
@@ -409,6 +413,7 @@
 				7C2DDAF01A5DC0F700AE2FAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C2DDAF11A5DC0F700AE2FAB /* Build configuration list for PBXNativeTarget "Interface Builder and FunctionsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				7C2DDAF31A5DC0F700AE2FAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

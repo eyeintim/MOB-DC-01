@@ -43,11 +43,11 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enl-3T-nl6">
                                 <rect key="frame" x="172" y="297" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Calculate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="177" y="227" width="46" height="30"/>
+                                    <rect key="frame" x="168" y="227" width="65" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="changeLabel:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mro-8y-Uia"/>
