@@ -18,7 +18,7 @@ class Animal {
     }
     
     func stringRepresentation() -> String {
-        return "The animal is a \(self.species), its name is \(self.name)"
+        return "The animal is a \(self.species); Its name is \(self.name)"
     }
 }
 
