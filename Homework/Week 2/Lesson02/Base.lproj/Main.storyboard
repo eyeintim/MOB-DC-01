@@ -50,7 +50,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2W-sh-fBn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2W-sh-fBn">
                                 <rect key="frame" x="138" y="249" width="325" height="101"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="325" id="0YK-KA-gJL"/>
@@ -71,6 +71,7 @@
                                 </state>
                                 <connections>
                                     <action selector="actionButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6fF-Gc-iEF"/>
+                                    <action selector="nameAge:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="r4c-ES-p3x"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -94,7 +95,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="ageField" destination="HD3-Of-BAd" id="I2R-yK-gDl"/>
                         <outlet property="label" destination="v2W-sh-fBn" id="n0Z-BN-Ubz"/>
+                        <outlet property="nameField" destination="dvu-Gz-gU3" id="qPX-6d-Sr7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
